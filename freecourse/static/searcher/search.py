@@ -27,7 +27,7 @@ def search(query, num_results):
 # Load JSON file into the data variable
 with open("freecourse/static/searcher/unique_data.json") as f:
     data = json.load(f)
-
+m = somthing
 # Example usage
 def give(query):
     r = []

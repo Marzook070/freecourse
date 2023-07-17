@@ -5,7 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
-
+freecourse\static\searcher\search.py
 # Distribution / packaging
 .Python
 build/
