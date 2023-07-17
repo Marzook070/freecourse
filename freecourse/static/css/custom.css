@@ -4,8 +4,9 @@ html, body {
 } 
 .searchbox{
     display: block;
-
-    padding: 10% 40%;    
+    display: flex;
+    justify-content: center;
+    padding:50px 0;
     width: 100%;
 }
 
@@ -66,11 +67,12 @@ html, body {
 
 }
 .items{
+    width: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    width: 500px;
+   
 }
 
 
@@ -80,13 +82,14 @@ html, body {
 /* changes for the samll screen devices */
 
 @media screen and (max-width: 780px){
+    .items{
+        width: 350px;
+    }
     .navbar{
         width: 100%;
     }
     .middlesection{
         flex-direction: row;
     }
-    .items{
-        width: 350px;
-    }
+    
   }
