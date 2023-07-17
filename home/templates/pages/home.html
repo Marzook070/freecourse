@@ -4,64 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
     <title>Home</title>
-    <style>
-        html, body {
-            margin: 0px;
-            padding: 0px;
-        } 
-        .searchbox{
-            display: block;
-
-            padding: 10% 40%;    
-            width: 100%;
-        }
-        
-
-        .navbar {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            /* z-index: 9; */
-            align-items: center;
-            justify-content: space-between;
-            text-transform: capitalize;
-
-            float: left;
-            display: flex;
-            color: white;
-            text-align: center;
-            padding: 0px 0px;
-            text-decoration: none;
-        }
-        .logo{
-            display: block;
-            align-items: center;
-            padding-top: 5px;
-            padding-left: 20px;
-            size: 18px;
-
-        }
-        .navbaritems{
-            padding-right: 15px;
-        }
-        .navbar .navbaritems a{
-            color: #fff;
-            width: 100%;
-            line-height: 50px;
-            text-decoration: none;
-            font-size: 18px;
-            padding-left: 30px;
-
-        }
-
-    </style>
+  
 </head>
 <body>
     
@@ -81,24 +26,33 @@
     <div class="searchbox">
         <form class="" action="" id="mainform" method="post">
             {% csrf_token %}
-            <label for="amount">Amount</label><br>
+            <label for="amount">Enter the Name or Subject related topic</label><br>
             <input type="text" name="currencytoconvert" id="currency-to-convert" autocomplete="off">
            
         </form>
     </div>
-    <div>
+    <div class="middlesection">
+        <div class="middleleft">
+
+        </div>
+        <div class="middlepart" >
+            
+                {% for i,j in list %}
+                    <div class="items">
+                        <a href="{{ j }}">{{ i }}</a>
+                        <img src="{% static 'images/poto.png' %}" alt="cover img">
+                    </div>
+                {% endfor %}
+            
+        </div>
+        <div class="middleright">
+
+        </div>
 
    
 
-    <img src="{% static 'images/poto.png'%}" alt="summa">
+    
     </div>
-    <div style="margin-top: 100px;" >
-        <ul>
-            {% for i,j in list %}
-
-                <li><a href="{{ j }}">{{ i }}</a>   </li>
-            {% endfor %}
-        </ul>
-    </div>
+    
 </body>
 </html>

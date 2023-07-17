@@ -1,0 +1,92 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+} 
+.searchbox{
+    display: block;
+
+    padding: 10% 40%;    
+    width: 100%;
+}
+
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+
+    float: left;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 0px 0px;
+    text-decoration: none;
+}
+.logo{
+    display: block;
+    align-items: center;
+    padding-top: 5px;
+    padding-left: 20px;
+    size: 18px;
+
+}
+.navbaritems{
+    padding-right: 15px;
+}
+.navbar .navbaritems a{
+    color: #fff;
+    width: 100%;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 30px;
+
+}
+.middlesection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.middleleft,.middleright{
+    width: 160px;
+    height: 600px;
+    display: block;
+
+}
+.middlepart{
+    display: flex;
+    flex-flow: column;
+
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 500px;
+}
+
+
+
+
+
+/* changes for the samll screen devices */
+
+@media screen and (max-width: 780px){
+    .navbar{
+        width: 100%;
+    }
+    .middlesection{
+        flex-direction: row;
+    }
+    .items{
+        width: 350px;
+    }
+  }
