@@ -5,14 +5,14 @@ __pycache__/
 
 # C extensions
 *.so
-freecourse\static\searcher\search.py
+
 # Distribution / packaging
 .Python
 build/
 develop-eggs/
 dist/
 downloads/
-eggs/
+eggs/`
 .eggs/
 lib/
 lib64/

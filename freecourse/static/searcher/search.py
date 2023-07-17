@@ -25,9 +25,13 @@ def search(query, num_results):
 
     return top_matches
 # Load JSON file into the data variable
-with open("freecourse/static/searcher/unique_data.json") as f:
-    data = json.load(f)
-m = somthing
+try:
+    with open("freecourse/static/searcher/unique_data.json") as f:
+        data = json.load(f)
+except:
+    with open("/home/freecourse/freecourse/freecourse/static/searcher/unique_data.json") as f:
+        data = json.load(f)
+
 # Example usage
 def give(query):
     r = []
